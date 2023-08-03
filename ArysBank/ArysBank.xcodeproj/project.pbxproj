@@ -1,0 +1,985 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9446A6EA2A7AAEAF00094E5F /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9446A6E92A7AAEAF00094E5F /* HistoryModel.swift */; };
+		9446A6EC2A7AAEDA00094E5F /* PaymentHistoryArchiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9446A6EB2A7AAEDA00094E5F /* PaymentHistoryArchiver.swift */; };
+		9455561B2A6ACB6A00D1DD6D /* AddMoneyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9455561A2A6ACB6A00D1DD6D /* AddMoneyVC.swift */; };
+		9455561D2A6ACB7100D1DD6D /* AddMoneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9455561C2A6ACB7100D1DD6D /* AddMoneyView.swift */; };
+		945E1C112A68034600BAA095 /* MainTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945E1C102A68034600BAA095 /* MainTabVC.swift */; };
+		945E1C142A68055800BAA095 /* FinanceNewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945E1C132A68055800BAA095 /* FinanceNewsVC.swift */; };
+		945E1C162A68056200BAA095 /* FinanceNewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945E1C152A68056200BAA095 /* FinanceNewsView.swift */; };
+		945E1C182A6806A100BAA095 /* CollectionViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945E1C172A6806A100BAA095 /* CollectionViewCells.swift */; };
+		945E1C1A2A681B4B00BAA095 /* NewsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945E1C192A681B4B00BAA095 /* NewsAPI.swift */; };
+		945E1C1C2A681B6300BAA095 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945E1C1B2A681B6300BAA095 /* NewsModel.swift */; };
+		945E1C262A685B2B00BAA095 /* CashBackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945E1C252A685B2B00BAA095 /* CashBackVC.swift */; };
+		945E1C282A685B3200BAA095 /* CashBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945E1C272A685B3200BAA095 /* CashBackView.swift */; };
+		945E1C2A2A685CA300BAA095 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945E1C292A685CA300BAA095 /* CollectionCell.swift */; };
+		946ED8A32A7A79B6006B1AE6 /* PaymentHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946ED8A22A7A79B6006B1AE6 /* PaymentHistoryVC.swift */; };
+		946ED8A52A7A79E8006B1AE6 /* PaymentHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946ED8A42A7A79E8006B1AE6 /* PaymentHistoryView.swift */; };
+		946ED8A92A7A7AC4006B1AE6 /* PaymentHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946ED8A82A7A7AC4006B1AE6 /* PaymentHistoryCell.swift */; };
+		948C54A02A645E8500D2F5B4 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C549F2A645E8500D2F5B4 /* CardModel.swift */; };
+		948C54A22A64608A00D2F5B4 /* CardAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C54A12A64608A00D2F5B4 /* CardAPI.swift */; };
+		949FABEE2A62FA7B00014686 /* ButtonFactory+LabelFacroty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949FABED2A62FA7B00014686 /* ButtonFactory+LabelFacroty.swift */; };
+		94A0A36F2A7B04D200A96874 /* AppSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A0A36E2A7B04D200A96874 /* AppSettingsVC.swift */; };
+		94A0A3712A7B04D900A96874 /* AppSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A0A3702A7B04D900A96874 /* AppSettingsView.swift */; };
+		94A0A3742A7B076800A96874 /* AccountDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A0A3732A7B076800A96874 /* AccountDetailCell.swift */; };
+		94A0A3762A7B0AE000A96874 /* AccountDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A0A3752A7B0AE000A96874 /* AccountDetailModel.swift */; };
+		94A0A3782A7B0CF900A96874 /* AppSettingsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A0A3772A7B0CF900A96874 /* AppSettingsAPI.swift */; };
+		94B0AEB12A783F8100788B33 /* BalanceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B0AEB02A783F8100788B33 /* BalanceModel.swift */; };
+		94E463802A6880FA00C88EE9 /* CashBackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E4637F2A6880FA00C88EE9 /* CashBackModel.swift */; };
+		94E463822A68812000C88EE9 /* CashBackAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E463812A68812000C88EE9 /* CashBackAPI.swift */; };
+		94F03DB82A640BDF00015F2B /* ExchangeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F03DB72A640BDF00015F2B /* ExchangeAPI.swift */; };
+		94F03DBB2A640C9800015F2B /* ExchangeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F03DBA2A640C9800015F2B /* ExchangeModel.swift */; };
+		94F03DBD2A641B6500015F2B /* PinCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F03DBC2A641B6500015F2B /* PinCodeVC.swift */; };
+		94F03DC12A641BAA00015F2B /* PinCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F03DC02A641BAA00015F2B /* PinCodeView.swift */; };
+		94F03DC32A641D1E00015F2B /* ButtonNumFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F03DC22A641D1E00015F2B /* ButtonNumFactory.swift */; };
+		94F03DC52A641DA100015F2B /* PinCodeNumPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F03DC42A641DA100015F2B /* PinCodeNumPad.swift */; };
+		94F845FF2A62B6FE00AD84BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F845FE2A62B6FE00AD84BE /* AppDelegate.swift */; };
+		94F846012A62B6FE00AD84BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F846002A62B6FE00AD84BE /* SceneDelegate.swift */; };
+		94F846032A62B6FE00AD84BE /* MainMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F846022A62B6FE00AD84BE /* MainMenuVC.swift */; };
+		94F846062A62B6FE00AD84BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F846042A62B6FE00AD84BE /* Main.storyboard */; };
+		94F846082A62B6FF00AD84BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94F846072A62B6FF00AD84BE /* Assets.xcassets */; };
+		94F8460B2A62B6FF00AD84BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F846092A62B6FF00AD84BE /* LaunchScreen.storyboard */; };
+		94F846162A62B6FF00AD84BE /* ArysBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F846152A62B6FF00AD84BE /* ArysBankTests.swift */; };
+		94F846202A62B6FF00AD84BE /* ArysBankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F8461F2A62B6FF00AD84BE /* ArysBankUITests.swift */; };
+		94F846222A62B6FF00AD84BE /* ArysBankUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F846212A62B6FF00AD84BE /* ArysBankUITestsLaunchTests.swift */; };
+		94F846322A62B79F00AD84BE /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F846312A62B79F00AD84BE /* MainMenuView.swift */; };
+		94F846352A62BA1E00AD84BE /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 94F846342A62BA1E00AD84BE /* SnapKit */; };
+		94F846392A62C35600AD84BE /* СreditСardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F846382A62C35600AD84BE /* СreditСardCell.swift */; };
+		94F8463B2A62CCE100AD84BE /* ExchangeRatesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F8463A2A62CCE100AD84BE /* ExchangeRatesViewCell.swift */; };
+		94FFC64C2A7ACB4100F1B439 /* DetailNewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FFC64B2A7ACB4100F1B439 /* DetailNewsVC.swift */; };
+		94FFC64E2A7ACB4D00F1B439 /* DetailNewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FFC64D2A7ACB4D00F1B439 /* DetailNewsView.swift */; };
+		F40BAB3D2A79181000D027D6 /* LogoPreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40BAB3C2A79181000D027D6 /* LogoPreView.swift */; };
+		F40BAB3F2A79232E00D027D6 /* TransferMoneyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40BAB3E2A79232E00D027D6 /* TransferMoneyVC.swift */; };
+		F40BAB412A79233B00D027D6 /* TransferMoneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40BAB402A79233B00D027D6 /* TransferMoneyView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		94F846122A62B6FF00AD84BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94F845F32A62B6FE00AD84BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94F845FA2A62B6FE00AD84BE;
+			remoteInfo = ArysBank;
+		};
+		94F8461C2A62B6FF00AD84BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94F845F32A62B6FE00AD84BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94F845FA2A62B6FE00AD84BE;
+			remoteInfo = ArysBank;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9446A6E92A7AAEAF00094E5F /* HistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
+		9446A6EB2A7AAEDA00094E5F /* PaymentHistoryArchiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHistoryArchiver.swift; sourceTree = "<group>"; };
+		9455561A2A6ACB6A00D1DD6D /* AddMoneyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMoneyVC.swift; sourceTree = "<group>"; };
+		9455561C2A6ACB7100D1DD6D /* AddMoneyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMoneyView.swift; sourceTree = "<group>"; };
+		945E1C102A68034600BAA095 /* MainTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabVC.swift; sourceTree = "<group>"; };
+		945E1C132A68055800BAA095 /* FinanceNewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceNewsVC.swift; sourceTree = "<group>"; };
+		945E1C152A68056200BAA095 /* FinanceNewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceNewsView.swift; sourceTree = "<group>"; };
+		945E1C172A6806A100BAA095 /* CollectionViewCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCells.swift; sourceTree = "<group>"; };
+		945E1C192A681B4B00BAA095 /* NewsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPI.swift; sourceTree = "<group>"; };
+		945E1C1B2A681B6300BAA095 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		945E1C252A685B2B00BAA095 /* CashBackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashBackVC.swift; sourceTree = "<group>"; };
+		945E1C272A685B3200BAA095 /* CashBackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashBackView.swift; sourceTree = "<group>"; };
+		945E1C292A685CA300BAA095 /* CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
+		946ED8A22A7A79B6006B1AE6 /* PaymentHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHistoryVC.swift; sourceTree = "<group>"; };
+		946ED8A42A7A79E8006B1AE6 /* PaymentHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHistoryView.swift; sourceTree = "<group>"; };
+		946ED8A82A7A7AC4006B1AE6 /* PaymentHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHistoryCell.swift; sourceTree = "<group>"; };
+		948C549F2A645E8500D2F5B4 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		948C54A12A64608A00D2F5B4 /* CardAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardAPI.swift; sourceTree = "<group>"; };
+		949FABED2A62FA7B00014686 /* ButtonFactory+LabelFacroty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ButtonFactory+LabelFacroty.swift"; sourceTree = "<group>"; };
+		94A0A36E2A7B04D200A96874 /* AppSettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsVC.swift; sourceTree = "<group>"; };
+		94A0A3702A7B04D900A96874 /* AppSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsView.swift; sourceTree = "<group>"; };
+		94A0A3732A7B076800A96874 /* AccountDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailCell.swift; sourceTree = "<group>"; };
+		94A0A3752A7B0AE000A96874 /* AccountDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailModel.swift; sourceTree = "<group>"; };
+		94A0A3772A7B0CF900A96874 /* AppSettingsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsAPI.swift; sourceTree = "<group>"; };
+		94B0AEB02A783F8100788B33 /* BalanceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceModel.swift; sourceTree = "<group>"; };
+		94E4637F2A6880FA00C88EE9 /* CashBackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashBackModel.swift; sourceTree = "<group>"; };
+		94E463812A68812000C88EE9 /* CashBackAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashBackAPI.swift; sourceTree = "<group>"; };
+		94F03DB72A640BDF00015F2B /* ExchangeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeAPI.swift; sourceTree = "<group>"; };
+		94F03DBA2A640C9800015F2B /* ExchangeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeModel.swift; sourceTree = "<group>"; };
+		94F03DBC2A641B6500015F2B /* PinCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCodeVC.swift; sourceTree = "<group>"; };
+		94F03DC02A641BAA00015F2B /* PinCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCodeView.swift; sourceTree = "<group>"; };
+		94F03DC22A641D1E00015F2B /* ButtonNumFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonNumFactory.swift; sourceTree = "<group>"; };
+		94F03DC42A641DA100015F2B /* PinCodeNumPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCodeNumPad.swift; sourceTree = "<group>"; };
+		94F845FB2A62B6FE00AD84BE /* ArysBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArysBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94F845FE2A62B6FE00AD84BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		94F846002A62B6FE00AD84BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		94F846022A62B6FE00AD84BE /* MainMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuVC.swift; sourceTree = "<group>"; };
+		94F846052A62B6FE00AD84BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		94F846072A62B6FF00AD84BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94F8460A2A62B6FF00AD84BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		94F8460C2A62B6FF00AD84BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94F846112A62B6FF00AD84BE /* ArysBankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArysBankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94F846152A62B6FF00AD84BE /* ArysBankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArysBankTests.swift; sourceTree = "<group>"; };
+		94F8461B2A62B6FF00AD84BE /* ArysBankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArysBankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94F8461F2A62B6FF00AD84BE /* ArysBankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArysBankUITests.swift; sourceTree = "<group>"; };
+		94F846212A62B6FF00AD84BE /* ArysBankUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArysBankUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		94F846312A62B79F00AD84BE /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
+		94F846382A62C35600AD84BE /* СreditСardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "СreditСardCell.swift"; sourceTree = "<group>"; };
+		94F8463A2A62CCE100AD84BE /* ExchangeRatesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesViewCell.swift; sourceTree = "<group>"; };
+		94FFC64B2A7ACB4100F1B439 /* DetailNewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNewsVC.swift; sourceTree = "<group>"; };
+		94FFC64D2A7ACB4D00F1B439 /* DetailNewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNewsView.swift; sourceTree = "<group>"; };
+		F40BAB3C2A79181000D027D6 /* LogoPreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoPreView.swift; sourceTree = "<group>"; };
+		F40BAB3E2A79232E00D027D6 /* TransferMoneyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferMoneyVC.swift; sourceTree = "<group>"; };
+		F40BAB402A79233B00D027D6 /* TransferMoneyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferMoneyView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		94F845F82A62B6FE00AD84BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94F846352A62BA1E00AD84BE /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94F8460E2A62B6FF00AD84BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94F846182A62B6FF00AD84BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		945556192A6ACB5600D1DD6D /* AddMoneyVC */ = {
+			isa = PBXGroup;
+			children = (
+				9455561A2A6ACB6A00D1DD6D /* AddMoneyVC.swift */,
+				9455561C2A6ACB7100D1DD6D /* AddMoneyView.swift */,
+			);
+			path = AddMoneyVC;
+			sourceTree = "<group>";
+		};
+		9455561E2A6AEAE400D1DD6D /* API's */ = {
+			isa = PBXGroup;
+			children = (
+				94F03DB72A640BDF00015F2B /* ExchangeAPI.swift */,
+				948C54A12A64608A00D2F5B4 /* CardAPI.swift */,
+				945E1C192A681B4B00BAA095 /* NewsAPI.swift */,
+				94E463812A68812000C88EE9 /* CashBackAPI.swift */,
+				94A0A3772A7B0CF900A96874 /* AppSettingsAPI.swift */,
+			);
+			path = "API's";
+			sourceTree = "<group>";
+		};
+		945E1C122A68054900BAA095 /* FinanceNews */ = {
+			isa = PBXGroup;
+			children = (
+				945E1C1D2A6835C700BAA095 /* FinanceMewsVC */,
+				94FFC64A2A7ACB0C00F1B439 /* DetailNewsVC */,
+			);
+			path = FinanceNews;
+			sourceTree = "<group>";
+		};
+		945E1C1D2A6835C700BAA095 /* FinanceMewsVC */ = {
+			isa = PBXGroup;
+			children = (
+				945E1C132A68055800BAA095 /* FinanceNewsVC.swift */,
+				945E1C152A68056200BAA095 /* FinanceNewsView.swift */,
+				945E1C1E2A6835D700BAA095 /* CollectionCell */,
+			);
+			path = FinanceMewsVC;
+			sourceTree = "<group>";
+		};
+		945E1C1E2A6835D700BAA095 /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				945E1C172A6806A100BAA095 /* CollectionViewCells.swift */,
+			);
+			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		945E1C242A685B0200BAA095 /* CashBackVC */ = {
+			isa = PBXGroup;
+			children = (
+				945E1C252A685B2B00BAA095 /* CashBackVC.swift */,
+				945E1C272A685B3200BAA095 /* CashBackView.swift */,
+				94FFC6492A7AC9FF00F1B439 /* CollectionViewCell */,
+			);
+			path = CashBackVC;
+			sourceTree = "<group>";
+		};
+		946ED8A62A7A7AA9006B1AE6 /* PaymentHistoryVC */ = {
+			isa = PBXGroup;
+			children = (
+				946ED8A22A7A79B6006B1AE6 /* PaymentHistoryVC.swift */,
+				946ED8A42A7A79E8006B1AE6 /* PaymentHistoryView.swift */,
+				946ED8A72A7A7AB2006B1AE6 /* TableViewCell */,
+			);
+			path = PaymentHistoryVC;
+			sourceTree = "<group>";
+		};
+		946ED8A72A7A7AB2006B1AE6 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				946ED8A82A7A7AC4006B1AE6 /* PaymentHistoryCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		949FABEF2A62FE7700014686 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				949FABED2A62FA7B00014686 /* ButtonFactory+LabelFacroty.swift */,
+				94F03DC22A641D1E00015F2B /* ButtonNumFactory.swift */,
+				94F03DC42A641DA100015F2B /* PinCodeNumPad.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		94A0A36D2A7B04C200A96874 /* AppSettings */ = {
+			isa = PBXGroup;
+			children = (
+				94A0A36E2A7B04D200A96874 /* AppSettingsVC.swift */,
+				94A0A3702A7B04D900A96874 /* AppSettingsView.swift */,
+				94A0A3722A7B074600A96874 /* TableViewCell */,
+			);
+			path = AppSettings;
+			sourceTree = "<group>";
+		};
+		94A0A3722A7B074600A96874 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				94A0A3732A7B076800A96874 /* AccountDetailCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		94F03DB62A640BC400015F2B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9455561E2A6AEAE400D1DD6D /* API's */,
+				9446A6EB2A7AAEDA00094E5F /* PaymentHistoryArchiver.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		94F03DB92A640C7500015F2B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				94F03DBA2A640C9800015F2B /* ExchangeModel.swift */,
+				948C549F2A645E8500D2F5B4 /* CardModel.swift */,
+				945E1C1B2A681B6300BAA095 /* NewsModel.swift */,
+				94E4637F2A6880FA00C88EE9 /* CashBackModel.swift */,
+				94B0AEB02A783F8100788B33 /* BalanceModel.swift */,
+				9446A6E92A7AAEAF00094E5F /* HistoryModel.swift */,
+				94A0A3752A7B0AE000A96874 /* AccountDetailModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		94F03DBE2A641B7400015F2B /* MainMenuVC */ = {
+			isa = PBXGroup;
+			children = (
+				F40BAB3C2A79181000D027D6 /* LogoPreView.swift */,
+				94F846022A62B6FE00AD84BE /* MainMenuVC.swift */,
+				94F846312A62B79F00AD84BE /* MainMenuView.swift */,
+				94F846372A62C33F00AD84BE /* CollectionViewCell */,
+				94F8463C2A62CE9C00AD84BE /* TableViewCell */,
+			);
+			path = MainMenuVC;
+			sourceTree = "<group>";
+		};
+		94F03DBF2A641B7C00015F2B /* PinCodeVC */ = {
+			isa = PBXGroup;
+			children = (
+				94F03DBC2A641B6500015F2B /* PinCodeVC.swift */,
+				94F03DC02A641BAA00015F2B /* PinCodeView.swift */,
+			);
+			path = PinCodeVC;
+			sourceTree = "<group>";
+		};
+		94F845F22A62B6FE00AD84BE = {
+			isa = PBXGroup;
+			children = (
+				94F845FD2A62B6FE00AD84BE /* ArysBank */,
+				94F846142A62B6FF00AD84BE /* ArysBankTests */,
+				94F8461E2A62B6FF00AD84BE /* ArysBankUITests */,
+				94F845FC2A62B6FE00AD84BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		94F845FC2A62B6FE00AD84BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94F845FB2A62B6FE00AD84BE /* ArysBank.app */,
+				94F846112A62B6FF00AD84BE /* ArysBankTests.xctest */,
+				94F8461B2A62B6FF00AD84BE /* ArysBankUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		94F845FD2A62B6FE00AD84BE /* ArysBank */ = {
+			isa = PBXGroup;
+			children = (
+				94F8462E2A62B70900AD84BE /* App */,
+				94F846302A62B71B00AD84BE /* Screens */,
+				94F03DB62A640BC400015F2B /* Service */,
+				94F03DB92A640C7500015F2B /* Models */,
+				94F8462F2A62B71400AD84BE /* Resources */,
+				949FABEF2A62FE7700014686 /* Components */,
+			);
+			path = ArysBank;
+			sourceTree = "<group>";
+		};
+		94F846142A62B6FF00AD84BE /* ArysBankTests */ = {
+			isa = PBXGroup;
+			children = (
+				94F846152A62B6FF00AD84BE /* ArysBankTests.swift */,
+			);
+			path = ArysBankTests;
+			sourceTree = "<group>";
+		};
+		94F8461E2A62B6FF00AD84BE /* ArysBankUITests */ = {
+			isa = PBXGroup;
+			children = (
+				94F8461F2A62B6FF00AD84BE /* ArysBankUITests.swift */,
+				94F846212A62B6FF00AD84BE /* ArysBankUITestsLaunchTests.swift */,
+			);
+			path = ArysBankUITests;
+			sourceTree = "<group>";
+		};
+		94F8462E2A62B70900AD84BE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				94F845FE2A62B6FE00AD84BE /* AppDelegate.swift */,
+				94F846002A62B6FE00AD84BE /* SceneDelegate.swift */,
+				945E1C102A68034600BAA095 /* MainTabVC.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		94F8462F2A62B71400AD84BE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				94F846042A62B6FE00AD84BE /* Main.storyboard */,
+				94F846072A62B6FF00AD84BE /* Assets.xcassets */,
+				94F846092A62B6FF00AD84BE /* LaunchScreen.storyboard */,
+				94F8460C2A62B6FF00AD84BE /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		94F846302A62B71B00AD84BE /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				945E1C122A68054900BAA095 /* FinanceNews */,
+				94F846362A62C31D00AD84BE /* MainMenu */,
+				94A0A36D2A7B04C200A96874 /* AppSettings */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		94F846362A62C31D00AD84BE /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				94F03DBF2A641B7C00015F2B /* PinCodeVC */,
+				94F03DBE2A641B7400015F2B /* MainMenuVC */,
+				945E1C242A685B0200BAA095 /* CashBackVC */,
+				945556192A6ACB5600D1DD6D /* AddMoneyVC */,
+				F40BAB422A79233E00D027D6 /* TransferMoneyVC */,
+				946ED8A62A7A7AA9006B1AE6 /* PaymentHistoryVC */,
+			);
+			path = MainMenu;
+			sourceTree = "<group>";
+		};
+		94F846372A62C33F00AD84BE /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				94F846382A62C35600AD84BE /* СreditСardCell.swift */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		94F8463C2A62CE9C00AD84BE /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				94F8463A2A62CCE100AD84BE /* ExchangeRatesViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		94FFC6492A7AC9FF00F1B439 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				945E1C292A685CA300BAA095 /* CollectionCell.swift */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		94FFC64A2A7ACB0C00F1B439 /* DetailNewsVC */ = {
+			isa = PBXGroup;
+			children = (
+				94FFC64B2A7ACB4100F1B439 /* DetailNewsVC.swift */,
+				94FFC64D2A7ACB4D00F1B439 /* DetailNewsView.swift */,
+			);
+			name = DetailNewsVC;
+			path = ../DetailNewsVC;
+			sourceTree = "<group>";
+		};
+		F40BAB422A79233E00D027D6 /* TransferMoneyVC */ = {
+			isa = PBXGroup;
+			children = (
+				F40BAB3E2A79232E00D027D6 /* TransferMoneyVC.swift */,
+				F40BAB402A79233B00D027D6 /* TransferMoneyView.swift */,
+			);
+			path = TransferMoneyVC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		94F845FA2A62B6FE00AD84BE /* ArysBank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94F846252A62B6FF00AD84BE /* Build configuration list for PBXNativeTarget "ArysBank" */;
+			buildPhases = (
+				94F845F72A62B6FE00AD84BE /* Sources */,
+				94F845F82A62B6FE00AD84BE /* Frameworks */,
+				94F845F92A62B6FE00AD84BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArysBank;
+			packageProductDependencies = (
+				94F846342A62BA1E00AD84BE /* SnapKit */,
+			);
+			productName = ArysBank;
+			productReference = 94F845FB2A62B6FE00AD84BE /* ArysBank.app */;
+			productType = "com.apple.product-type.application";
+		};
+		94F846102A62B6FF00AD84BE /* ArysBankTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94F846282A62B6FF00AD84BE /* Build configuration list for PBXNativeTarget "ArysBankTests" */;
+			buildPhases = (
+				94F8460D2A62B6FF00AD84BE /* Sources */,
+				94F8460E2A62B6FF00AD84BE /* Frameworks */,
+				94F8460F2A62B6FF00AD84BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94F846132A62B6FF00AD84BE /* PBXTargetDependency */,
+			);
+			name = ArysBankTests;
+			productName = ArysBankTests;
+			productReference = 94F846112A62B6FF00AD84BE /* ArysBankTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		94F8461A2A62B6FF00AD84BE /* ArysBankUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94F8462B2A62B6FF00AD84BE /* Build configuration list for PBXNativeTarget "ArysBankUITests" */;
+			buildPhases = (
+				94F846172A62B6FF00AD84BE /* Sources */,
+				94F846182A62B6FF00AD84BE /* Frameworks */,
+				94F846192A62B6FF00AD84BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94F8461D2A62B6FF00AD84BE /* PBXTargetDependency */,
+			);
+			name = ArysBankUITests;
+			productName = ArysBankUITests;
+			productReference = 94F8461B2A62B6FF00AD84BE /* ArysBankUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		94F845F32A62B6FE00AD84BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					94F845FA2A62B6FE00AD84BE = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					94F846102A62B6FF00AD84BE = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 94F845FA2A62B6FE00AD84BE;
+					};
+					94F8461A2A62B6FF00AD84BE = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 94F845FA2A62B6FE00AD84BE;
+					};
+				};
+			};
+			buildConfigurationList = 94F845F62A62B6FE00AD84BE /* Build configuration list for PBXProject "ArysBank" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 94F845F22A62B6FE00AD84BE;
+			packageReferences = (
+				94F846332A62BA1E00AD84BE /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
+			productRefGroup = 94F845FC2A62B6FE00AD84BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94F845FA2A62B6FE00AD84BE /* ArysBank */,
+				94F846102A62B6FF00AD84BE /* ArysBankTests */,
+				94F8461A2A62B6FF00AD84BE /* ArysBankUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		94F845F92A62B6FE00AD84BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94F8460B2A62B6FF00AD84BE /* LaunchScreen.storyboard in Resources */,
+				94F846082A62B6FF00AD84BE /* Assets.xcassets in Resources */,
+				94F846062A62B6FE00AD84BE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94F8460F2A62B6FF00AD84BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94F846192A62B6FF00AD84BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		94F845F72A62B6FE00AD84BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				945E1C1C2A681B6300BAA095 /* NewsModel.swift in Sources */,
+				946ED8A92A7A7AC4006B1AE6 /* PaymentHistoryCell.swift in Sources */,
+				945E1C162A68056200BAA095 /* FinanceNewsView.swift in Sources */,
+				94F03DBB2A640C9800015F2B /* ExchangeModel.swift in Sources */,
+				94F846032A62B6FE00AD84BE /* MainMenuVC.swift in Sources */,
+				94A0A3712A7B04D900A96874 /* AppSettingsView.swift in Sources */,
+				945E1C282A685B3200BAA095 /* CashBackView.swift in Sources */,
+				94A0A3762A7B0AE000A96874 /* AccountDetailModel.swift in Sources */,
+				94F03DC12A641BAA00015F2B /* PinCodeView.swift in Sources */,
+				F40BAB3D2A79181000D027D6 /* LogoPreView.swift in Sources */,
+				94B0AEB12A783F8100788B33 /* BalanceModel.swift in Sources */,
+				948C54A02A645E8500D2F5B4 /* CardModel.swift in Sources */,
+				94F03DB82A640BDF00015F2B /* ExchangeAPI.swift in Sources */,
+				9446A6EA2A7AAEAF00094E5F /* HistoryModel.swift in Sources */,
+				94F03DBD2A641B6500015F2B /* PinCodeVC.swift in Sources */,
+				945E1C1A2A681B4B00BAA095 /* NewsAPI.swift in Sources */,
+				94FFC64C2A7ACB4100F1B439 /* DetailNewsVC.swift in Sources */,
+				F40BAB412A79233B00D027D6 /* TransferMoneyView.swift in Sources */,
+				94E463802A6880FA00C88EE9 /* CashBackModel.swift in Sources */,
+				94A0A3742A7B076800A96874 /* AccountDetailCell.swift in Sources */,
+				94F03DC32A641D1E00015F2B /* ButtonNumFactory.swift in Sources */,
+				949FABEE2A62FA7B00014686 /* ButtonFactory+LabelFacroty.swift in Sources */,
+				946ED8A52A7A79E8006B1AE6 /* PaymentHistoryView.swift in Sources */,
+				9455561D2A6ACB7100D1DD6D /* AddMoneyView.swift in Sources */,
+				94F8463B2A62CCE100AD84BE /* ExchangeRatesViewCell.swift in Sources */,
+				945E1C2A2A685CA300BAA095 /* CollectionCell.swift in Sources */,
+				94F03DC52A641DA100015F2B /* PinCodeNumPad.swift in Sources */,
+				94A0A3782A7B0CF900A96874 /* AppSettingsAPI.swift in Sources */,
+				94E463822A68812000C88EE9 /* CashBackAPI.swift in Sources */,
+				94FFC64E2A7ACB4D00F1B439 /* DetailNewsView.swift in Sources */,
+				94F845FF2A62B6FE00AD84BE /* AppDelegate.swift in Sources */,
+				945E1C142A68055800BAA095 /* FinanceNewsVC.swift in Sources */,
+				948C54A22A64608A00D2F5B4 /* CardAPI.swift in Sources */,
+				94A0A36F2A7B04D200A96874 /* AppSettingsVC.swift in Sources */,
+				9446A6EC2A7AAEDA00094E5F /* PaymentHistoryArchiver.swift in Sources */,
+				94F846322A62B79F00AD84BE /* MainMenuView.swift in Sources */,
+				945E1C182A6806A100BAA095 /* CollectionViewCells.swift in Sources */,
+				F40BAB3F2A79232E00D027D6 /* TransferMoneyVC.swift in Sources */,
+				946ED8A32A7A79B6006B1AE6 /* PaymentHistoryVC.swift in Sources */,
+				9455561B2A6ACB6A00D1DD6D /* AddMoneyVC.swift in Sources */,
+				945E1C262A685B2B00BAA095 /* CashBackVC.swift in Sources */,
+				94F846012A62B6FE00AD84BE /* SceneDelegate.swift in Sources */,
+				94F846392A62C35600AD84BE /* СreditСardCell.swift in Sources */,
+				945E1C112A68034600BAA095 /* MainTabVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94F8460D2A62B6FF00AD84BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94F846162A62B6FF00AD84BE /* ArysBankTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94F846172A62B6FF00AD84BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94F846222A62B6FF00AD84BE /* ArysBankUITestsLaunchTests.swift in Sources */,
+				94F846202A62B6FF00AD84BE /* ArysBankUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		94F846132A62B6FF00AD84BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94F845FA2A62B6FE00AD84BE /* ArysBank */;
+			targetProxy = 94F846122A62B6FF00AD84BE /* PBXContainerItemProxy */;
+		};
+		94F8461D2A62B6FF00AD84BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94F845FA2A62B6FE00AD84BE /* ArysBank */;
+			targetProxy = 94F8461C2A62B6FF00AD84BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		94F846042A62B6FE00AD84BE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94F846052A62B6FE00AD84BE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		94F846092A62B6FF00AD84BE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94F8460A2A62B6FF00AD84BE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		94F846232A62B6FF00AD84BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		94F846242A62B6FF00AD84BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		94F846262A62B6FF00AD84BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ArysBank/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "swith-case.ArysBank";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		94F846272A62B6FF00AD84BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ArysBank/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "swith-case.ArysBank";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		94F846292A62B6FF00AD84BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "swith-case.ArysBankTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArysBank.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ArysBank";
+			};
+			name = Debug;
+		};
+		94F8462A2A62B6FF00AD84BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "swith-case.ArysBankTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArysBank.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ArysBank";
+			};
+			name = Release;
+		};
+		94F8462C2A62B6FF00AD84BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "swith-case.ArysBankUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ArysBank;
+			};
+			name = Debug;
+		};
+		94F8462D2A62B6FF00AD84BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "swith-case.ArysBankUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ArysBank;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		94F845F62A62B6FE00AD84BE /* Build configuration list for PBXProject "ArysBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94F846232A62B6FF00AD84BE /* Debug */,
+				94F846242A62B6FF00AD84BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94F846252A62B6FF00AD84BE /* Build configuration list for PBXNativeTarget "ArysBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94F846262A62B6FF00AD84BE /* Debug */,
+				94F846272A62B6FF00AD84BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94F846282A62B6FF00AD84BE /* Build configuration list for PBXNativeTarget "ArysBankTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94F846292A62B6FF00AD84BE /* Debug */,
+				94F8462A2A62B6FF00AD84BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94F8462B2A62B6FF00AD84BE /* Build configuration list for PBXNativeTarget "ArysBankUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94F8462C2A62B6FF00AD84BE /* Debug */,
+				94F8462D2A62B6FF00AD84BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		94F846332A62BA1E00AD84BE /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		94F846342A62BA1E00AD84BE /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 94F846332A62BA1E00AD84BE /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 94F845F32A62B6FE00AD84BE /* Project object */;
+}

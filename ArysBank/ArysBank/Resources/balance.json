@@ -1,0 +1,40 @@
+//
+//  balance.swift
+//  ArysBank
+//
+//  Created by Жека on 31/07/2023.
+//
+
+{
+    "Card":[
+        {
+            "id":1,
+            "nameSurname":"Evgeniy Gornostayev"
+            "period":"02/28"
+            "numberCart":"4253394832418274"
+            "balance":0
+        }
+    ]
+}
+
+
+
+struct Card: Codable {
+    var id: Int
+    var nameSurname, period, numberCart: String
+    var balance: Int
+}
+
+
+
+{
+    "cart": [
+        {
+            "id": 1,
+            "nameSurname": "Evgeniy Gornostayev",
+            "period": "11/29",
+            "numberCart": "2361",
+            "balance": 4528
+        }
+    ]
+}
