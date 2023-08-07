@@ -16,6 +16,7 @@
     <li><a href="#component">REST API</a></li>
     <li><a href="#component">JSON</a></li>
     <li><a href="#component">SnapKit</a></li>
+    <li><a href="#component">TabBar</a></li>
     <li><a href="#component">CollectionView</a></li>
     <li><a href="#component">TableView</a></li>
 </ul>
@@ -27,6 +28,7 @@
 </p>
 
 <p>Here is the main menu where the bank card, 4 active buttons, and exchange rates are located. Bank card data and exchange rates come from my server.I keep the balance of the card and save it in the code. Because my server doesn't support POST/SET and I save them in code... Replenishment and transfers are saved in the history. Red color is transfer, green color is replenishment</p>
+<p>From the main menu there is a transition to the news view, where you can see financial news and which are taken from my server, and a transition to the settings where personal data  </p>
 
 <h2>Buttons</h2>
 <ul>
